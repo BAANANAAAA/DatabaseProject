@@ -1,0 +1,204 @@
+.MainFrame {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.sidebar button:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #d2caca;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  background-color: rgb(230, 133, 23);
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-name,
+.post-time,
+.post-location {
+  margin-bottom: 5px;
+}
+
+.post-body {
+  margin-bottom: 10px;
+}
+
+.post-footer {
+  display: flex;
+}
+
+.post-footer input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-footer button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-footer button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-replies {
+  margin-left: auto;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  margin-left: 200px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+}
+
+.post-replies {
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-reply-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-reply-input input {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-left: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-reply-input button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-reply-input button:hover {
+  background-color: #0056b3;
+}
+
+/* New styles for the modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.modal-content select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-content .checkbox-group {
+  margin-bottom: 10px;
+}
+
+.modal-content .checkbox-group .select-all {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.modal-content .checkbox-group .checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content button {
+  margin-right: 10px;
+}
+
+.new-thread {
+  margin-left: 100px;
+}

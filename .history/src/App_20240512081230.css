@@ -1,0 +1,55 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f3f3f3;
+}
+
+input[type='search'] {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  background-color: #eee;
+  height: 100vh;
+  padding: 10px;
+}
+
+.content {
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-info input[type='radio'] {
+  margin-right: 10px;
+}
+
+.post-message {
+  margin-top: 5px;
+}

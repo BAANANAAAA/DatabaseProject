@@ -1,0 +1,39 @@
+.follow-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally in the flex container */
+  justify-content: center; /* Centers content vertically in the flex container */
+  position: absolute; /* Positions the container absolutely relative to its nearest positioned ancestor */
+  top: 50%; /* Position it at 50% from the top of the screen */
+  left: 50%; /* Position it at 50% from the left of the screen */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offsets the element by 50% of its own width and height, effectively centering it */
+  width: 300px; /* Fixed width, you can adjust this as needed */
+  margin: auto; /* Auto margin for automatic spacing */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for better visibility */
+}
+
+.follow-block-container input,
+.follow-block-container button {
+  padding: 10px;
+  width: 100%; 
+  box-sizing: border-box; 
+
+.follow-block-container button {
+  background-color: #56bddc; 
+  color: white; 
+  font-weight: bold; 
+  border: none; 
+  cursor: pointer; 
+  margin-top: 20px; 
+  transition: background-color 0.3s; 
+}
+
+.follow-block-container button:hover {
+  background-color: #45a049; 
+}

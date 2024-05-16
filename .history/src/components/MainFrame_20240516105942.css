@@ -1,0 +1,96 @@
+.main-frame {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  background-color: #bfcfd4;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #86aeb4;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar button:hover {
+  background: #e0e0e0;
+}
+
+.message-list {
+  margin-left: 250px;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.message img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.thread-header {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.thread-photo,
+.message-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.thread-messages {
+  padding: 10px;
+  background-color: #fff;
+  border-left: 3px solid #ddd;
+}
+
+.message {
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+}
+
+.thread {
+  margin-bottom: 10px;
+}
+
+.expand-button {
+  width: 80px;
+  padding: 10px;
+  background-color: #308cefc4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,101 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #f3f3f3;
+}
+
+input[type='search'] {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  background-color: #eee;
+  height: 100vh;
+  padding: 10px;
+}
+
+.content {
+  margin-left: 100px;
+  padding: 10px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-info input[type='radio'] {
+  margin-right: 10px;
+}
+
+.post-message {
+  margin-top: 5px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #f3f3f3;
+}
+
+nav a {
+  margin-right: 5px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.post-button {
+  position: fixed; /* Fixed positioning to keep the button at the same spot */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 20px; /* Distance from the left of the viewport */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button, making it square */
+  background-color: #007bff; /* Bootstrap's primary blue color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 50%; /* Fully round borders to make it circular */
+  font-size: 24px; /* Larger font size for visibility */
+  text-align: center; /* Center the text/icon in the button */
+  line-height: 48px; /* Center the line height to align "+" or "-" vertically */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  z-index: 1000; /* High z-index to float above other components */
+}

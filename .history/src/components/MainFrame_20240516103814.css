@@ -1,0 +1,52 @@
+.main-frame {
+  display: flex;
+  min-height: 100vh; /* 确保主框架填充整个视口高度 */
+}
+
+.sidebar {
+  width: 200px; /* 设置侧边栏的宽度 */
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f8f8f8; /* 轻微区分背景色 */
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* 添加圆角 */
+}
+
+.sidebar button:hover {
+  background: #e0e0e0;
+}
+
+.message-list {
+  flex-grow: 1; /* 允许消息列表填充剩余空间 */
+  padding: 20px;
+  overflow-y: auto; /* 添加滚动条 */
+}
+
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff; /* 设置消息背景色 */
+  border-radius: 5px; /* 圆角边框 */
+}
+
+.message img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%; /* 头像圆形显示 */
+  margin-right: 10px; /* 与文本保持间距 */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}

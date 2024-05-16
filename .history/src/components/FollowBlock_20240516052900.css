@@ -1,0 +1,66 @@
+.follow-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.follow-block-container input,
+.follow-block-container button {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.follow-block-container button {
+  width: 100%;
+  background-color: #56bddc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.follow-block-container button:hover {
+  background-color: #74d579;
+}
+
+.follow-block-container h2 {
+  color: #333;
+}
+
+.current-selection {
+  margin: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.follow-block-container label {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.follow-block-container input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+.follow-block-container select {
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  cursor: pointer;
+}

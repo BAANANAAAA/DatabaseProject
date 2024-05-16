@@ -1,0 +1,40 @@
+.follow-block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally in the flex container */
+  justify-content: center; /* Centers content vertically in the flex container */
+  position: absolute; /* Positions the container absolutely relative to its nearest positioned ancestor */
+  top: 50%; /* Position it at 50% from the top of the screen */
+  left: 50%; /* Position it at 50% from the left of the screen */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Offsets the element by 50% of its own width and height, effectively centering it */
+  width: 300px; /* Fixed width, you can adjust this as needed */
+  margin: auto; /* Auto margin for automatic spacing */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for better visibility */
+}
+
+.follow-block-container input,
+.follow-block-container button {
+  padding: 10px;
+  width: 100%; /* Makes input and button expand to the full width of the container */
+  box-sizing: border-box; /* Ensures padding does not affect the width */
+}
+
+.follow-block-container button {
+  background-color: #4caf50; /* Green background for the button */
+  color: white; /* White text color */
+  font-weight: bold; /* Makes the button text bold */
+  border: none; /* No border for a cleaner look */
+  cursor: pointer; /* Cursor changes to pointer when hovering over the button */
+  margin-top: 20px; /* Adds space between the input and the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.follow-block-container button:hover {
+  background-color: #45a049; /* Slightly darker green on hover for visual feedback */
+}

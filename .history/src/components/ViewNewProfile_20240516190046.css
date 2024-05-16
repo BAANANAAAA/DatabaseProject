@@ -1,0 +1,50 @@
+.profile-container {
+  width: 100%;
+  max-width: 600px; /* 控制最大宽度 */
+  margin: 20px auto; /* 居中显示 */
+  padding: 20px;
+  border: 1px solid #ddd; /* 边框 */
+  border-radius: 8px; /* 圆角 */
+  background-color: #f9f9f9; /* 背景颜色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.profile-header {
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  cursor: pointer; /* 鼠标悬浮变手形 */
+}
+
+.profile-avatar {
+  width: 50px; /* 头像宽度 */
+  height: 50px; /* 头像高度 */
+  border-radius: 50%; /* 圆形头像 */
+  margin-right: 20px; /* 头像与文字的间距 */
+}
+
+.username-btn {
+  background: none;
+  border: none;
+  font-size: 16px; /* 字号 */
+  color: #333; /* 字体颜色 */
+  cursor: pointer; /* 鼠标悬浮变手形 */
+  padding: 5px 10px; /* 内边距 */
+  transition: color 0.3s; /* 颜色变化过渡效果 */
+}
+
+.username-btn:hover {
+  color: #0056b3; /* 鼠标悬浮时颜色变化 */
+}
+
+.profile-details {
+  margin-top: 20px; /* 详细信息与头像的间距 */
+  padding: 15px;
+  background-color: #ffffff; /* 详细信息的背景颜色 */
+  border: 1px solid #eee; /* 边框 */
+  border-radius: 4px; /* 圆角 */
+}
+
+.profile-details p {
+  margin: 10px 0; /* 段落间距 */
+  line-height: 1.5; /* 行高 */
+}

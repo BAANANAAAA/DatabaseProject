@@ -1,0 +1,147 @@
+.main-frame {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+  background-color: #bfcfd4;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #86aeb4;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar button:hover {
+  background: #e0e0e0;
+}
+
+.message-list {
+  margin-left: 250px;
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #c3d1edcc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.message-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.thread-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.thread-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.thread-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.expand-button {
+  width: 80px;
+  padding: 10px;
+  background-color: #308cefc4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thread-messages {
+  padding: 10px;
+  background-color: #fff;
+  border-left: 3px solid #ddd;
+}
+
+.thread {
+  margin-bottom: 10px;
+  background-color: #a7b0cb8a;
+  border-radius: 8px;
+}
+
+/* Reply Button Style */
+button.reply-button {
+  background-color: #5d5d5d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.reply-button:hover {
+  background-color: #def3fd;
+}
+
+/* Input Field and Send Button Styles */
+form.reply-form {
+  display: flex;
+  margin-top: 5px;
+}
+
+input.reply-input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+button.send-button {
+  background-color: #407485dd;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.send-button:hover {
+  background-color: #007b9ad6;
+}
